@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "Two conjectures of Wormald on Hamilton cycles in tournaments"
+type: software
+authors:
+  - family-names: Bhattacharjee
+    given-names: Deep
+    orcid: "https://orcid.org/0000-0003-0466-750X"
+    affiliation: "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    email: d.bhattacharjee@erl-forschung.de
+version: 1.0.0
+date-released: 2026-10-14
+license: MIT
+repository-code: "https://github.com/creelie/Breakthrough-problems-1"
+keywords:
+  - tournament
+  - Hamilton cycle
+  - random blow-up
+  - Hessian determinant
+  - skew-symmetric matrix
+  - Lean 4
+abstract: >-
+  For a regular tournament on d vertices with skew adjacency matrix S, the Hessian determinant H
+  that Wormald attached to its random blow-ups equals d det(d^2 I + S^2)/det(d^2 I - S^2). Hence
+  H is nonzero and d/H is the square of a rational number, as Wormald conjectured. For the cyclic
+  tournament the formula gives sqrt(d/H) = ((d+1)^d + (d-1)^d)/((d+i)^d + (d-i)^d), so the
+  associated constants tend to cosh 1/cos 1 = 2.8559578925..., which proves a second conjecture of
+  Wormald and identifies his numerical constant. The algebra is formalised in Lean 4 with Mathlib.
+references:
+  - type: article
+    title: "Tournaments with many Hamilton cycles"
+    authors:
+      - family-names: Wormald
+        given-names: Nicholas C.
+    year: 2026
+    url: "https://arxiv.org/abs/2610.16245"
+    identifiers:
+      - type: other
+        value: "arXiv:2610.16245"
