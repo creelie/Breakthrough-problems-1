@@ -130,7 +130,11 @@ Let $T$ be a regular tournament on $d\ge3$ vertices and $m=(d-1)/2$. Then
 \]
 with equality on the left if and only if $T$ is doubly regular. Here, with $\sigma=\cot^2\frac{\pi}{2d}$, $q=\lfloor d(d-1)/(2\sigma)\rfloor$ and $r=d(d-1)/2-q\sigma$,
 \[
-U_d=\Bigl(\frac{d^2+\sigma}{d^2-\sigma}\Bigr)^{q}\,\frac{d^2+r}{d^2-r},\qquad \lim_{d\to\infty}U_d=\frac{(\pi^2+4)(3\pi^2-8)}{(\pi^2-4)(\pi^2+8)}=2.8574011776\ldots.
+U_d=\Bigl(\frac{d^2+\sigma}{d^2-\sigma}\Bigr)^{q}\,\frac{d^2+r}{d^2-r},
+\]
+and
+\[
+\lim_{d\to\infty}U_d=\frac{(\pi^2+4)(3\pi^2-8)}{(\pi^2-4)(\pi^2+8)}=2.8574011776\ldots.
 \]
 In particular $\rho_\cR(T)>e$ for every regular tournament $T$, and every limit point of $\max_T\rho_\cR(T)$, the maximum over regular tournaments on $d$ vertices, lies in $[2.8559578,\,2.8574012]$.
 \end{theorem}
@@ -206,8 +210,9 @@ v^\T M(u)W=-\tfrac1{\sqrt d}(e^u-\one)^\T W,\qquad W^\T M(u)v=-\tfrac1{\sqrt d}W
 \end{gather*}
 The last two are $O(|u|)$, so
 \begin{equation}\label{eq:Phi}
-\Phi(u)=-\frac1d\Bigl(\one^\T u+\tfrac12u^\T u+u^\T R^\sharp Nu\Bigr)+O(|u|^3),\qquad R^\sharp=W(I-W^\T YW)^{-1}W^\T.
+\Phi(u)=-\frac1d\Bigl(\one^\T u+\tfrac12u^\T u+u^\T R^\sharp Nu\Bigr)+O(|u|^3),
 \end{equation}
+where $R^\sharp=W(I-W^\T YW)^{-1}W^\T$.
 \emph{The matrix $R^\sharp N$.} The skew matrix $Y$ maps $\one^\perp$ into itself, so $YW=WW^\T YW$ and $(I-Y)W=W(I-W^\T YW)$. Therefore $W(I-W^\T YW)^{-1}=(I-Y)^{-1}W$ and $R^\sharp=(I-Y)^{-1}(I-P)$. As $(I-P)P=0$ and $(I-P)Y=Y$, we get $R^\sharp N=(I-Y)^{-1}(I-P)(P+Y)=X$. So \eqref{eq:Phi} becomes $\Phi(u)=-\frac1d\bigl(\one^\T u+u^\T(\tfrac12I+X)u\bigr)+O(|u|^3)$.
 
 \emph{The implicit function.} Since $\partial\Phi/\partial u_d(0)=-1/d\ne0$, there is an analytic function $\psi$ near $0\in\mathbb C^{d-1}$ with $\psi(0)=0$ such that, near $0$, $G(u)=0$ exactly when $u_d=\psi(u_1,\dots,u_{d-1})$. By uniqueness in the implicit function theorem for $K$, $h(ze^{u'})=ze^{\psi(u')}$ for $u'$ near $0$, and so $\tilde f(\theta)=\log z+\psi(i\theta)$ and $\Hess\tilde f(0)=-\Hess\psi(0)$. On the graph of $\psi$ the expansion of $\Phi$ gives $\psi(u')=-\one^\T u'+O(|u'|^2)$, so that $u=Eu'+O(|u'|^2)$, and then
@@ -226,9 +231,10 @@ $F=(I+Y^2)(I-Y^2)^{-1}$. In particular $F\one=\one$, $\one^\T F=\one^\T$ and
 
 \begin{proof}
 As $Y^\T=-Y$, we have $X^\T=Y^\T(I-Y^\T)^{-1}=-Y(I+Y)^{-1}$. The matrices $Y$, $(I-Y)^{-1}$ and $(I+Y)^{-1}$ commute, so
-\[
-F=I+Y\bigl[(I+Y)-(I-Y)\bigr](I-Y^2)^{-1}=I+2Y^2(I-Y^2)^{-1}=(I+Y^2)(I-Y^2)^{-1}.
-\]
+\begin{align*}
+F&=I+Y\bigl[(I+Y)-(I-Y)\bigr](I-Y^2)^{-1}\\
+&=I+2Y^2(I-Y^2)^{-1}=(I+Y^2)(I-Y^2)^{-1}.
+\end{align*}
 Since $Y\one=0$ and $\one^\T Y=0$, the row and column sums of $F$ equal $1$. Finally $\det(I\pm Y^2)=d^{-2d}\det(d^2I\pm S^2)$.
 \end{proof}
 
@@ -265,9 +271,10 @@ $S(I+P_c)=I-P_c$. Consequently, for all $a,b$ in any commutative ring,
 
 \begin{proof}
 Using $C^d=I$, so that $C^{r+m+1}=C^{r-m}$,
-\[
-S(I+C^{m+1})=\sum_{r=1}^m(C^r-C^{-r})+\sum_{s=1-m}^{0}C^{s}-\sum_{s=1}^{m}C^{s}=\sum_{s=0}^{m-1}C^{-s}-\sum_{r=1}^mC^{-r}=I-C^{m+1}.
-\]
+\begin{align*}
+S(I+C^{m+1})&=\sum_{r=1}^m(C^r-C^{-r})+\sum_{s=1-m}^{0}C^{s}-\sum_{s=1}^{m}C^{s}\\
+&=\sum_{s=0}^{m-1}C^{-s}-\sum_{r=1}^mC^{-r}=I-C^{m+1}.
+\end{align*}
 Hence $(aI+bS)(I+P_c)=(a+b)I+(a-b)P_c$. Since $m+1$ is prime to $d$, $P_c$ is the permutation matrix of a single cycle $\pi$ of odd length $d$. In the expansion of $\det(\alpha I+\beta P_c)$ a permutation $\tau$ contributes only if $\tau(j)\in\{j,\pi(j)\}$ for all $j$; if $\tau(j)=\pi(j)$ for one $j$ then $\tau(\pi(j))=\pi^2(j)$, and so on, so $\tau$ is the identity or $\pi$. As $\pi$ is even, $\det(\alpha I+\beta P_c)=\alpha^d+\beta^d$. In particular $\det(I+P_c)=2$, and taking determinants gives \eqref{eq:aIbS}.
 \end{proof}
 
