@@ -1,5 +1,10 @@
 # Two conjectures of Wormald on Hamilton cycles in tournaments
 
+## Current upload package
+
+[Paper_8 package](Paper_8%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 1.1.0.
+
+
 N. C. Wormald, *Tournaments with many Hamilton cycles*
 ([arXiv:2610.16245](https://arxiv.org/abs/2610.16245); on his Monash page since at least 2013),
 lower-bounds the largest number h(n) of Hamilton cycles in an n-vertex tournament by averaging over
@@ -112,3 +117,11 @@ Lean formalization, and to draft the text; the author verified every step and is
 the content.
 
 MIT License.
+
+## Current research context and revised proof
+
+The current manuscript credits [Divoux and Wang, arXiv:2610.23755](https://arxiv.org/html/2610.23755v1) for the broader sharp global Hamilton-cycle asymptotic. It no longer calls h(n)=Theta(g(n)) open. The contribution here is the exact finite-tournament Hessian formula and rational-square theorem, the cyclic closed form and limit, with complete written proofs. No first-priority claim for the broader global theorem or numerical constant is made.
+
+The revision writes out the implicit first/second derivatives, gives a quantitative positive-definiteness corollary and a direct proof of the spectral-radius input. [Proof audit](verification/paper8/proof-audit.json) records the 23 standard-axiom Lean reports at the unchanged proof tree and the formalization boundary. The new exact matrix checker compares all 3136 entries on 41 tournaments and verifies both matrix bounds; 142 manuscript-value checks pass. These finite checks complement the universal proofs.
+
+The submitting author specifically confirmed that all parts of Paper 8 have been checked and understood by a human. The original sole byline is retained. Use the files in `Paper_8 package` for new submissions; older master ZIPs and arXiv tarballs remain historical artifacts. No arXiv submission is performed.

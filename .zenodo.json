@@ -1,0 +1,41 @@
+{
+  "title": "Two conjectures of Wormald on Hamilton cycles in tournaments — submission package",
+  "upload_type": "software",
+  "version": "1.1.0",
+  "publication_date": "2026-10-25",
+  "creators": [
+    {
+      "name": "Bhattacharjee, Deep",
+      "orcid": "0000-0003-0466-750X",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    }
+  ],
+  "description": "<p>Two conjectures of Wormald on Hamilton cycles in tournaments. Hexagon/Overleaf and European Journal of Combinatorics submission preparation, version 1.1.0. The reviewed folder Paper_8 package contains the article PDF, a minimal compilable TeX ZIP, AI provenance, Hexagon fields, journal details, an unsent cover letter with editable source, and an author-prepared AI disclosure. All PDFs have no row or margin line numbers. No journal submission or acceptance is claimed.</p><p>The manuscript proves Wormald's Conjectures 2 and 6: a determinant formula for every regular tournament gives the rational-square property, and an exact cyclic formula gives the limit cosh(1)/cos(1). This revision details the analytic Hessian identification, proves quantitative positive-definiteness and supplies a direct spectral-radius argument.</p><p>Verification scope: The unchanged Lean proof tree has a complete successful build and 23 axiom reports using only propext, Classical.choice and Quot.sound. It formalizes the determinant algebra and cyclic limit after identifying H with det(E^T F E). The analytic identification, asymptotic expansion, spectral bounds and new quantitative corollary have written proofs and are not claimed as Lean-formalized. Fresh exact checks verify 41 full Hessian matrices (3136 entries) and their bounds, and 142 manuscript values; numerical checks complement the universal proofs.</p><p>Original preprint: https://hexagonmath.org/2610.00460v1. Earlier manuscript/source DOI: 10.5281/zenodo.23567153. Original attribution and component licences are preserved. Human-understanding and mixed-text declarations record the submitting author's explicit statement on 25 October 2026. The standalone AI declaration is author-prepared, not an official signed publisher form.</p>",
+  "license": "mit-license",
+  "keywords": [
+    "regular tournaments",
+    "Hamilton cycles",
+    "Hessian determinants",
+    "random blow-ups",
+    "rational-square identities",
+    "spectral bounds",
+    "05C20",
+    "05C45",
+    "05C50",
+    "05C80",
+    "15A15"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://hexagonmath.org/2610.00460v1",
+      "scheme": "url",
+      "relation": "isSupplementTo"
+    },
+    {
+      "identifier": "10.5281/zenodo.23567153",
+      "scheme": "doi",
+      "relation": "isSupplementTo"
+    }
+  ],
+  "notes": "Component licence notices in the original repository remain authoritative. The article is already available under the existing Hexagon CC BY 4.0 record. New package DOI is assigned by Zenodo after the GitHub release; no earlier DOI is reused as the new release DOI."
+}

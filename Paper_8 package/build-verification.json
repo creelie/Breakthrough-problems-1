@@ -1,0 +1,23 @@
+{
+  "status": "PASS",
+  "scope": "Extracted source ZIP compilation and full PDF text/page comparison, not a new proof audit.",
+  "main_document": "main.tex",
+  "compiler": "pdfLaTeX (TeX Live 2023)",
+  "source_zip_members": [
+    "figures/blowup.png",
+    "figures/convergence.png",
+    "main.tex"
+  ],
+  "source_changes": [],
+  "matches_existing_pdf_text_and_pages": true,
+  "pages": 11,
+  "manuscript_pdf_sha256": "75eaf81ba0128279ba1fd32730f69cbaeede87966fd352077156909ab5a9a4c4",
+  "source_zip_sha256": "a24386d97b0b8144a8e420826342c5a9da7fbd97357fcb04a7b70065c44f7154",
+  "cover_letter_pages": 1,
+  "ai_declaration_pages": 1,
+  "overfull_boxes": [],
+  "line_numbering_disabled": true,
+  "visual_review_complete": true,
+  "visual_review_scope": "All 11 manuscript pages inspected in rendered contact sheets; both supporting PDFs inspected at full size. No clipping, overlaps or row/margin line numbers.",
+  "no_margin_line_numbers": true
+}

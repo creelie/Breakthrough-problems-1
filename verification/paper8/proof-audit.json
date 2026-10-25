@@ -1,0 +1,139 @@
+{
+  "status": "PASS",
+  "theorems": "Wormald Conjectures 2 and 6, as stated in arXiv:2610.16245",
+  "scope": "Every regular tournament (rational-square property and exact Hessian formula); cyclic tournaments through all odd orders (limit).",
+  "proof_commit": "7b2ff761b28f47ed6fbe01689a038f4633daf5b5",
+  "proof_source_tree": "92c798a2a94f3fc4af5c7379737e32cd7499a499",
+  "lean_version": "4.34.1",
+  "mathlib_commit": "d13f23b723b8a846827a245b89c10fc7d3f11612",
+  "formal_reports": 23,
+  "axioms": [
+    "propext",
+    "Classical.choice",
+    "Quot.sound"
+  ],
+  "formal_scope": "Algebraic Hessian determinant det(E^T F E), determinant squares, cyclic tournament identities, closed form and limit. The analytic bridge is not a Lean theorem.",
+  "written_proof_audit": [
+    {
+      "obligation": "Analytic bridge",
+      "argument": "Local Schur complement has nonzero u_d derivative. All first and second derivatives are explicit; differentiating Φ(u′,ψ(u′))=0 and substituting u′=iθ gives Hess f=E^T F E, including its sign."
+    },
+    {
+      "obligation": "Algebraic reduction",
+      "argument": "F=(I+Y²)(I-Y²)⁻¹ has unit row and column sums. A bordered basis gives det(E^T F E)=d det F."
+    },
+    {
+      "obligation": "Nonvanishing and rational square",
+      "argument": "Skew eigenvalues have modulus at most d-1. Both relevant determinants are squares of positive integers; conjugation and transpose identify the Gaussian determinant with an ordinary integer."
+    },
+    {
+      "obligation": "Cyclic formula",
+      "argument": "S(I+P)=I-P and the odd-cycle permutation determinant yield the exact formula at each odd order."
+    },
+    {
+      "obligation": "Limit and expansion",
+      "argument": "The normalized finite-order powers converge to e, e⁻¹ and e^i. The logarithmic expansion accounts for the stated odd coefficients."
+    },
+    {
+      "obligation": "General spectral bounds",
+      "argument": "Jensen gives the lower bound. A direct signed-permutation phase argument proves the spectral-radius input; convex maximization gives the upper bound, including r=0."
+    },
+    {
+      "obligation": "Quantitative nondegeneracy",
+      "argument": "Every eigenvalue of F lies in [a_d,1]. Congruence by E gives a_d(I+J)≼Hess f≼I+J and the stated determinant bounds."
+    }
+  ],
+  "not_formalized": [
+    "Analytic identification with Wormald implicit function",
+    "Asymptotic coefficient expansion",
+    "General spectral bounds",
+    "Added quantitative corollary"
+  ],
+  "fresh_finite_checks": {
+    "hessian_definition_cases": 41,
+    "exact_full_hessian_matrices": 41,
+    "exact_matrix_entries": 3136,
+    "matrix_and_determinant_bounds": "PASS",
+    "manuscript_values": 142,
+    "spectral_checks": "PASS"
+  },
+  "finite_checks_are_not_the_universal_proof": true,
+  "related_work": {
+    "source": "https://arxiv.org/html/2610.23755v1",
+    "authors": "Alexander Divoux and Shouda Wang",
+    "public_arxiv_date": "2026-10-16",
+    "claim": "Broader sharp global Hamilton-cycle asymptotic is credited, not claimed as this manuscript’s contribution.",
+    "mathematical_input_to_hessian_proof": false,
+    "first_priority_claim_made": false
+  },
+  "original_full_run": {
+    "run": "https://github.com/creelie/Breakthrough-problems-1/actions/runs/38543514270",
+    "run_id": 38543514270,
+    "head_sha": "7b2ff761b28f47ed6fbe01689a038f4633daf5b5",
+    "status": "completed",
+    "conclusion": "success",
+    "jobs": [
+      {
+        "name": "Lean 4 proof with Mathlib and axiom audit",
+        "conclusion": "success",
+        "id": 115783797493
+      },
+      {
+        "name": "Build the paper",
+        "conclusion": "success",
+        "id": 115783797768
+      },
+      {
+        "name": "C, Python and PARI/GP checks",
+        "conclusion": "success",
+        "id": 115783797898
+      }
+    ],
+    "log_zip_sha256": "34633eadecf115ecde8b7cf52b5737ba2745278af35e7af14580cd5cf5cca1d4",
+    "audit_lines": [
+      "2026-10-14T09:36:14.8854815Z checked 41 tournaments, mismatches 0",
+      "2026-10-14T09:36:16.3663071Z failures 0",
+      "2026-10-14T09:36:17.3530387Z failures 0",
+      "2026-10-14T09:36:17.3830533Z all checks passed",
+      "2026-10-14T09:35:56.8240058Z Complete job name: Lean 4 proof with Mathlib and axiom audit",
+      "2026-10-14T09:38:08.7590519Z Build completed successfully (8933 jobs).",
+      "2026-10-14T09:38:12.9056111Z 'WormaldTournament.IsSignSkew.det_add_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9066510Z 'WormaldTournament.IsSignSkew.det_sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9067136Z 'WormaldTournament.det_add_mul_self_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9068133Z 'WormaldTournament.ratio_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9068728Z 'WormaldTournament.hessian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9069238Z 'WormaldTournament.det_hessian' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9069746Z 'WormaldTournament.conj6_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9070271Z 'WormaldTournament.regular_hessian_det' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9070779Z 'WormaldTournament.det_conjB' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9071276Z 'WormaldTournament.det_conjB_hessF' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9071781Z 'WormaldTournament.conjecture6' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9072326Z 'WormaldTournament.det_smul_one_add_smul_shift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9072894Z 'WormaldTournament.isTournament_cyclicT' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9073444Z 'WormaldTournament.isRegular_cyclicT' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9073943Z 'WormaldTournament.cayley' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9074439Z 'WormaldTournament.two_mul_det_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9074979Z 'WormaldTournament.four_mul_detMinus_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9075541Z 'WormaldTournament.four_mul_detPlus_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9076184Z 'WormaldTournament.div_hessDet_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9076703Z 'WormaldTournament.re_add_I_pow_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9077206Z 'WormaldTournament.rhoT_cyclic_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9077722Z 'WormaldTournament.tendsto_cycRatio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:12.9078230Z 'WormaldTournament.conjecture2' depends on axioms: [propext, Classical.choice, Quot.sound]",
+      "2026-10-14T09:38:13.1726560Z axiom audit: 23 theorems, standard axioms only"
+    ]
+  },
+  "lean_files_sha256": {
+    "Check.lean": "1c8907d9e32173efcfaaf775b3c65d905f0cf78d3330545c9cf366fb6f0d08ce",
+    "lakefile.lean": "980e214ce5a678f7724582202c3bca1b242f9a568dbda24c7788e8830d16d27b",
+    "WormaldTournament/Bordered.lean": "a45c152211eba1fb8fcde342ac4380d21a883d3fae37777c099a3ac2d33bac49",
+    "WormaldTournament/Cyclic.lean": "8405d3c62ed29b3e232d264bb4cfea4c120457a6ade71e874e10692c317ff95e",
+    "WormaldTournament/Hessian.lean": "0a31bd6499a2a96214f66330dac24c14b0208ff58b5bcd81679436d9e14216a3",
+    "WormaldTournament/Limit.lean": "3e7374bb502103e3ca76785940d0fa523ef84765d1828becf7360b7924e0c11b",
+    "WormaldTournament/Main.lean": "a1afe8d613b61da62249349d529092f4279bb26abbc5d20246365447bd5e6518",
+    "WormaldTournament/Nonsingular.lean": "a6fb8a21497f6f057588606e7700184c7ff19ebcb3ed20e3ed8f807a6d54309d",
+    "WormaldTournament/Square.lean": "6a00dc9825ebf74e18690ae8298fbbd57dd55a6df06c090bf058d6a7d2aee5e8",
+    "WormaldTournament/Tournament.lean": "8aac30c54f17b9e00740e4ba2e8c3ae1d5558ded702544b9872df1352badf623",
+    "WormaldTournament.lean": "052f358f5fb90dd57b7ba34292a7f993c403c2d7e53defd32e52a8c4505eb9b2"
+  }
+}

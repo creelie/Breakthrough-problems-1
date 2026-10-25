@@ -55,7 +55,7 @@ For a regular tournament on $d$ vertices with skew adjacency matrix $S$, the Hes
 
 \section{Introduction}
 
-Let $\hc(T)$ be the number of Hamilton cycles of a tournament $T$, let $h(n)$ be the largest value of $\hc$ over tournaments on $n$ vertices, and let $g(n)=2^{-n}(n-1)!$ be the expected number of Hamilton cycles of a uniformly random tournament on $n$ vertices. The random tournament shows that $h(n)\ge g(n)$, an argument that goes back to Szele~\cite{Sz} for Hamilton paths. Alon~\cite{Al} proved $h(n)=O(n^{3/2}g(n))$, and Friedgut and Kahn~\cite{FK} lowered the exponent below $5/4$. On the side of constructions, Adler, Alon and Ross~\cite{AAR} found tournaments with $(e-o(1))g'(n)$ Hamilton paths, where $g'(n)=2^{1-n}n!$ is the expected number of Hamilton paths of a random tournament. Whether $h(n)=\Theta(g(n))$ is open.
+Let $\hc(T)$ be the number of Hamilton cycles of a tournament $T$, let $h(n)$ be the largest value of $\hc$ over tournaments on $n$ vertices, and let $g(n)=2^{-n}(n-1)!$ be the expected number of Hamilton cycles of a uniformly random tournament on $n$ vertices. The random tournament shows that $h(n)\ge g(n)$, an argument that goes back to Szele~\cite{Sz} for Hamilton paths. Alon~\cite{Al} proved $h(n)=O(n^{3/2}g(n))$, and Friedgut and Kahn~\cite{FK} lowered the exponent below $5/4$. On the side of constructions, Adler, Alon and Ross~\cite{AAR} found tournaments with $(e-o(1))g'(n)$ Hamilton paths, where $g'(n)=2^{1-n}n!$ is the expected number of Hamilton paths of a random tournament. A recent preprint of Divoux and Wang~\cite{DW} gives the sharper global asymptotic $h(n)=(\cosh1/\cos1+o(1))g(n)$ and the analogous result for Hamilton paths. Our exact finite-tournament Hessian calculation below is proved directly from Wormald's definition; that global asymptotic is contextual background, not an input to its proof.
 
 Wormald~\cite{W} improved the constant $e$ by averaging over random blow-ups of a fixed tournament. Let $T$ be a tournament on $[d]=\{1,\dots,d\}$ with $d$ odd. The random tournament $\cT(T,n)$ on $dn$ vertices is obtained by replacing each vertex $j$ of $T$ by an independent uniformly random tournament $T_j$ on $n$ vertices and each arc $jk$ of $T$ by all arcs from $T_j$ to $T_k$; in $\cR(T,n)$ the $T_j$ are uniformly random \emph{regular} tournaments ($n$ odd). See Figure~\ref{fig:blowup}. When $T$ is regular, Wormald's main results~\cite[Theorems~1 and~4]{W} read as follows.
 
@@ -145,12 +145,12 @@ A tournament is doubly regular if every two vertices have the same number, neces
 Wormald also lists values of $\rho_\cT$ for seven $9$-vertex circulants, the digraphs with an arc $jk$ whenever $k-j\bmod 9$ lies in a set $D$ of size four, and from the smallest of them, $1.4582$ for $D=\{1,3,4,5\}$, he infers that some regular $n$-tournaments have at most about $1.4582\,e^{1/9}g(n)\approx1.63\,g(n)$ Hamilton cycles. Only one of the seven sets, $D=\{1,2,3,5\}$, defines a tournament: each of the other six contains both $r$ and $9-r$ for some $r$, so its circulant has $2$-cycles and Theorem~W does not apply to it. For $D=\{1,2,3,5\}$ Theorem~\ref{thm:main} gives $\rho_\cT=451696/183937=2.4557\ldots$, matching his value. By Theorem~\ref{thm:bounds} every regular tournament on $9$ vertices has $\rho_\cT\ge(5/4)^4=2.4414\ldots$, and blow-ups of regular tournaments never give fewer than $(e-o(1))g(n)$ expected Hamilton cycles. The bound $1.63\,g(n)$ is therefore not supported by these examples.
 \end{remark}
 
-The algebraic steps of the proofs are checked in Lean~4 with Mathlib~\cite{L4,Ml}: the identity behind \eqref{eq:main}, the integrality and squareness statements, the characteristic polynomial of $R_d$, the closed form \eqref{eq:cyclic}, and the limit $\cosh1/\cos1$. The one step that is not formalized is Proposition~\ref{prop:hessian}, which identifies Wormald's analytic definition of $H$ with a determinant by the implicit function theorem. That step was checked by computing $H$ exactly, directly from Wormald's definition, for one regular tournament of each skew spectrum with at most $9$ vertices and for random ones with $11$ and $13$ vertices (Section~\ref{sec:verification}).
+The determinant identities, integrality and rational-square statements, cyclic characteristic polynomial, closed form and cyclic limit are checked in Lean~4 with Mathlib~\cite{L4,Ml}. Proposition~\ref{prop:hessian} supplies the written analytic bridge from Wormald's implicit function to that algebraic determinant. The asymptotic expansion, general spectral bounds and quantitative nondegeneracy corollary also have written proofs; their exact formal-check scope is stated in Section~\ref{sec:verification}. Exact computations from Wormald's definition support the analytic bridge on the specified finite examples.
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.82\textwidth]{figures/blowup.png}
-\caption{The random blow-up $\cT(R_7,n)$. Each vertex $j$ of the cyclic tournament $R_7$ becomes a random tournament $T_j$ on $n$ vertices, and every arc of $R_7$ becomes the complete set of arcs from one block to the next; the three arcs leaving $T_1$ are coloured and the other eighteen are grey.}
+\caption{The random blow-up $\cT(R_7,n)$. Each vertex $j$ of the cyclic tournament $R_7$ becomes a random tournament $T_j$ on $n$ vertices, and every arc of $R_7$ becomes the complete set of arcs from one block to the next; the three arcs leaving $T_1$ are coloured and the other eighteen are grey. Drawn from the accompanying TikZ source, whose generation code was developed with Claude Code assistance (see the AI declaration).}
 \label{fig:blowup}
 \end{figure}
 
@@ -219,7 +219,19 @@ where $R^\sharp=W(I-W^\T YW)^{-1}W^\T$.
 \[
 \psi(u')=-\one^\T u'-(Eu')^\T(\tfrac12I+X)(Eu')+O(|u'|^3).
 \]
-The Hessian of the quadratic term is $-E^\T(I+X+X^\T)E=-E^\T FE$. Hence $\Hess\tilde f(0)=E^\T FE$ and $H=\det(E^\T FE)$.
+The Hessian of the quadratic term is $-E^\T(I+X+X^\T)E=-E^\T FE$. Equivalently, differentiating the Schur-complement equation gives the explicit second derivatives
+\[
+\Phi_j(0)=-\frac1d,\qquad \Phi_{jk}(0)=-\frac{F_{jk}}d,\qquad \psi_j(0)=-1,
+\]
+and, for $1\le j,k<d$,
+\[
+\psi_{jk}(0)=-\bigl(F_{jk}-F_{jd}-F_{dk}+F_{dd}\bigr).
+\]
+Indeed the second derivative of $\Phi(u',\psi(u'))=0$ is
+\[
+\Phi_{jk}+\Phi_{jd}\psi_k+\Phi_{dk}\psi_j+\Phi_{dd}\psi_j\psi_k+\Phi_d\psi_{jk}=0.
+\]
+All derivatives here are evaluated at $0$. A holomorphic logarithm is chosen near $h(z,\dots,z)=z>0$, with value $\log z$, so the substitution $u'=i\theta$ changes the sign of the second derivatives. Thus $\Hess\tilde f(0)=E^\T FE$ entry by entry and $H=\det(E^\T FE)$.
 \end{proof}
 
 \begin{lemma}\label{lem:F}
@@ -252,6 +264,18 @@ so $\det(d^2I-S^2)=\det(dI-S)^2$ and $\det(d^2I+S^2)=\det(dI-iS)^2$. The entries
 \det(dI-S)=d\prod_{k=1}^m(d^2+\mu_k^2),\qquad \det(dI-iS)=d\prod_{k=1}^m(d^2-\mu_k^2),
 \]
 and both are positive because $\mu_k\le d-1$ by Lemma~\ref{lem:N}. This proves \eqref{eq:rho}.
+\end{proof}
+
+\begin{corollary}[Quantitative nondegeneracy]\label{cor:positivehessian}
+Let $\mathcal H=\Hess\tilde f(0)$ and $a_d=(2d-1)/(2d^2-2d+1)$. Then $\mathcal H$ is real symmetric positive definite and, in the order on real symmetric matrices,
+\[
+a_d(I_{d-1}+J_{d-1})\preceq\mathcal H\preceq I_{d-1}+J_{d-1}.
+\]
+In particular every eigenvalue of $\mathcal H$ lies in $[a_d,d]$ and $d\,a_d^{d-1}\le H\le d$.
+\end{corollary}
+
+\begin{proof}
+The skew-symmetric matrix $Y=S/d$ has eigenvalues $i\mu/d$, where $|\mu|\le d-1$. Lemma~\ref{lem:F} shows that the eigenvalues of the real symmetric matrix $F$ are $(d^2-\mu^2)/(d^2+\mu^2)$, which lie in $[a_d,1]$. Hence $a_d I\preceq F\preceq I$. Congruence by the full-rank matrix $E$, together with $E^\T E=I_{d-1}+J_{d-1}$ and Proposition~\ref{prop:hessian}, proves the matrix inequalities. The latter matrix has eigenvalues $1$ and $d$ and determinant $d$, yielding the remaining assertions by congruence and determinant monotonicity for positive definite matrices.
 \end{proof}
 
 \begin{proof}[Proof of Corollary~\ref{cor:conj6}]
@@ -311,7 +335,7 @@ Let $\varepsilon>0$ and choose $d$ with $\rho_\cR(R_d)>\cosh1/\cos1-\varepsilon$
 \begin{figure}[t]
 \centering
 \includegraphics[width=0.86\textwidth]{figures/convergence.png}
-\caption{$\rho_\cR(T)$ for regular tournaments on $d$ vertices. The dots are the cyclic tournaments $R_d$; the band is bounded by $e^{1/d}((d+1)/(d-1))^{(d-1)/2}$ and $e^{1/d}U_d$ (Theorem~\ref{thm:bounds}). The upper bound and $\rho_\cR(R_d)$ both approach the region near $\cosh1/\cos1$, while the lower bound decreases to $e$.}
+\caption{$\rho_\cR(T)$ for regular tournaments on $d$ vertices. The dots are the cyclic tournaments $R_d$; the band is bounded by $e^{1/d}((d+1)/(d-1))^{(d-1)/2}$ and $e^{1/d}U_d$ (Theorem~\ref{thm:bounds}). The upper bound and $\rho_\cR(R_d)$ both approach the region near $\cosh1/\cos1$, while the lower bound decreases to $e$. Values are computed from the displayed formulae by the archived Python/TikZ generator, developed with Claude Code assistance.}
 \label{fig:convergence}
 \end{figure}
 
@@ -335,6 +359,19 @@ Let $\omega^d=-1$ and $v=(1,\omega,\dots,\omega^{d-1})^\T$. Then
 so $(1+\omega)/(1-\omega)=i\cot(\theta/2)$ is an eigenvalue for $\omega=e^{i\theta}$, $\theta=(2k-1)\pi/d$. These $d$ numbers are distinct.
 \end{proof}
 
+\begin{lemma}[Spectral-radius bound]\label{lem:radiusbound}
+If $B$ is a real skew-symmetric $d\times d$ matrix with $|B_{jk}|\le1$, then its spectral radius is at most $\cot(\pi/(2d))$.
+\end{lemma}
+
+\begin{proof}
+The matrix $iB$ is Hermitian, so it suffices to bound $|v^*iBv|$ for every unit vector $v\in\mathbb C^d$. Changing coordinate signs and then permuting the coordinates preserves the hypotheses on $B$ and the Rayleigh quotient. We may therefore write $v_j=r_je^{i\theta_j}$ with $r_j\ge0$ and $0\le\theta_1\le\cdots\le\theta_d<\pi$: choose the sign of each nonzero coordinate to put its argument in $[0,\pi)$ and then sort the arguments; zero coordinates may have argument zero. Then
+\[
+|v^*iBv|=\left|-2\sum_{j<k}B_{jk}r_jr_k\sin(\theta_k-\theta_j)\right|
+\le 2\sum_{j<k}r_jr_k\sin(\theta_k-\theta_j)=|v^*iD_dv|.
+\]
+Every sine in the sum is nonnegative. By Lemma~\ref{lem:Dd} and the Hermitian Rayleigh bound, the last expression is at most $\cot(\pi/(2d))\|v\|^2$. This proves the claim. The bound is also recorded in~\cite[Lemma~12]{GKLV}; the proof above supplies the input used here.
+\end{proof}
+
 \begin{proof}[Proof of Theorem~\ref{thm:bounds}]
 \emph{Lower bound.} By \eqref{eq:trace} and Jensen's inequality, $\log\rho_\cT(T)\ge m\,\varphi(d)=m\log\frac{d+1}{d-1}$, with equality if and only if $s_1=\dots=s_m=d$. As $S$ is normal with $S\one=0$, this happens exactly when $SS^\T=dI-J$. Expanding with $A+A^\T=J-I$ and $AJ=JA^\T=mJ$ gives
 \[
@@ -347,7 +384,7 @@ so the equality condition is $AA^\T=\frac14\bigl((d+1)I+(d-3)J\bigr)$: every two
 \log\Bigl(e^{1/d}\Bigl(\frac{d+1}{d-1}\Bigr)^m\Bigr)=x+\frac{1-x}{2x}\log\frac{1+x}{1-x}=1+\sum_{k\ge1}\frac{x^{2k}-x^{2k+1}}{2k+1}>1.
 \]
 
-\emph{Upper bound.} Grzesik, Kr\'al', Lov\'asz and Volec~\cite[Lemma~12]{GKLV} proved that no skew-symmetric matrix with entries in $[-1,1]$ has larger spectral radius than $D_d$, so $s_k\le\sigma=\cot^2\frac\pi{2d}<d^2$ by Lemma~\ref{lem:Dd}. Hence $(s_1,\dots,s_m)$ lies in the polytope $\{0\le s_k\le\sigma,\ \sum s_k=d(d-1)/2\}$, on which the convex function $\sum\varphi(s_k)$ attains its maximum at a vertex. A point of the polytope with two coordinates in $(0,\sigma)$ is the midpoint of two other points of it, so at a vertex at most one coordinate lies strictly between $0$ and $\sigma$; this forces $q$ coordinates equal to $\sigma$, one equal to $r$ and the rest $0$, and the value $\log U_d$. As $d\to\infty$, $\sigma/d^2\to4/\pi^2$ and $d(d-1)/(2d^2)\to\frac12$; since $1<\pi^2/8<2$ we get $q=1$ for large $d$, $r/d^2\to\frac12-\frac4{\pi^2}$, and the stated limit. Finally, every limit point of $\max_T\rho_\cR(T)$ is at least $\lim\rho_\cR(R_d)=\cosh1/\cos1$ and at most $\lim e^{1/d}U_d$.
+\emph{Upper bound.} Lemma~\ref{lem:radiusbound} gives $s_k\le\sigma=\cot^2\frac\pi{2d}<d^2$ by Lemma~\ref{lem:Dd}. Hence $(s_1,\dots,s_m)$ lies in the polytope $\{0\le s_k\le\sigma,\ \sum s_k=d(d-1)/2\}$, on which the convex function $\sum\varphi(s_k)$ attains its maximum at a vertex. A point of the polytope with two coordinates in $(0,\sigma)$ is the midpoint of two other points of it, so at a vertex at most one coordinate lies strictly between $0$ and $\sigma$; this forces $q$ coordinates equal to $\sigma$, one further coordinate equal to $r$ when $r>0$, and all remaining coordinates equal to $0$, giving the value $\log U_d$ (also when $r=0$). As $d\to\infty$, $\sigma/d^2\to4/\pi^2$ and $d(d-1)/(2d^2)\to\frac12$; since $1<\pi^2/8<2$ we get $q=1$ for large $d$, $r/d^2\to\frac12-\frac4{\pi^2}$, and the stated limit. Finally, every limit point of $\max_T\rho_\cR(T)$ is at least $\lim\rho_\cR(R_d)=\cosh1/\cos1$ and at most $\lim e^{1/d}U_d$.
 \end{proof}
 
 \begin{table}[t]
@@ -391,8 +428,16 @@ All statements were checked by computer, independently of the proofs, and the al
 
 \emph{Lean.} The formalization proves, from the standard axioms only, the identity $F=(I+Y^2)(I-Y^2)^{-1}$ and Lemma~\ref{lem:border} for the matrix $F$ of a regular tournament, the resulting formula $\det(E^\T FE)=d\det(d^2I+S^2)/\det(d^2I-S^2)$, the nonvanishing of both determinants, the fact that their ratio is the square of a nonzero rational, Lemma~\ref{lem:cayley}, the closed form \eqref{eq:cyclic} including $\operatorname{Re}(d+i)^d>0$, and the limit $\cosh1/\cos1$ for $e^{1/d}\sqrt{d/\det(E^\T FE)}$ along $R_d$. Proposition~\ref{prop:hessian}, the asymptotic expansion in Theorem~\ref{thm:cyclic} and Theorem~\ref{thm:bounds} are proved in this paper and checked numerically, but not formalized.
 
-\subsection*{Use of generative AI}
-The author used Claude (Anthropic) to search the literature, to run the computer checks and the Lean formalization, and to draft the text; the author verified every step and is responsible for the content.
+\subsection*{Proof and verification scope}
+The two conjectures concern every regular tournament and a limit through all odd orders. The Schur-complement and implicit-differentiation argument proves the analytic identification of $H$ for every such tournament, including the sign arising from $u'=i\theta$. The rational-square conclusion then follows from exact determinant identities, and the cyclic limit follows from the explicit finite-order formula. The quantitative nondegeneracy corollary is a written spectral deduction. Finite computations support these arguments and do not replace a universal step.
+
+The Lean development formalizes the determinant algebra and cyclic limit using $\det(E^\T FE)$ as its definition of the Hessian determinant. It does not formalize the analytic identification with Wormald's implicit function, the asymptotic expansion, the general spectral bounds or the added quantitative corollary. Those statements have written proofs here. The archive records the exact unchanged proof tree, the complete successful Lean build and its $23$ standard-axiom reports, together with independent arithmetic checks. No claim of a new Lean formalization of the implicit function theorem is made.
+
+\subsection*{Data and code availability}
+The article, editable sources, Lean project, verification programs and audit receipts are available in release~v1.1.0 of \url{https://github.com/creelie/Breakthrough-problems-1}, with the upload files in \texttt{Paper\_8 package}. The prior public preprint is \url{https://hexagonmath.org/2610.00460v1}. The new Hexagon version identifier is assigned only upon submission.
+
+\subsection*{Declaration of generative AI and AI-assisted technologies}
+Claude (Anthropic), through Claude Code, assisted the original searches, computations, verification programs, Lean proofs, figure-generation code and text. OpenAI Codex assisted this revision's literature and proof review, explicit implicit derivatives, quantitative corollary, verification records and submission files. The original Hexagon provenance records Claude Code Opus~5.5 Ultracode; no more precise historical model identifier is inferred. The author has confirmed that all parts have been checked and understood by a human, and retains responsibility for the content, references and submission decisions. AI tools are not authors.
 
 \begin{thebibliography}{99}
 
@@ -401,6 +446,9 @@ I.~Adler, N.~Alon and S.~M.~Ross, \emph{On the maximum number of Hamiltonian pat
 
 \bibitem{Al}
 N.~Alon, \emph{The maximum number of Hamiltonian paths in tournaments}, Combinatorica \textbf{10} (1990), no.~4, 319--324, \doi{10.1007/BF02128667}.
+
+\bibitem{DW}
+A.~Divoux and S.~Wang, \emph{The maximum number of Hamiltonian cycles in tournaments}, preprint, \href{https://arxiv.org/abs/2610.23755}{arXiv:2610.23755} (2026).
 
 \bibitem{FK}
 E.~Friedgut and J.~Kahn, \emph{On the number of Hamiltonian cycles in a tournament}, Combin. Probab. Comput. \textbf{14} (2005), no.~5--6, 769--781, \doi{10.1017/S0963548305006863}.

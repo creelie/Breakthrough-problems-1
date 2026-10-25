@@ -1,0 +1,57 @@
+{
+  "run": "https://github.com/creelie/Breakthrough-problems-1/actions/runs/38543514270",
+  "run_id": 38543514270,
+  "head_sha": "7b2ff761b28f47ed6fbe01689a038f4633daf5b5",
+  "status": "completed",
+  "conclusion": "success",
+  "jobs": [
+    {
+      "name": "Lean 4 proof with Mathlib and axiom audit",
+      "conclusion": "success",
+      "id": 115783797493
+    },
+    {
+      "name": "Build the paper",
+      "conclusion": "success",
+      "id": 115783797768
+    },
+    {
+      "name": "C, Python and PARI/GP checks",
+      "conclusion": "success",
+      "id": 115783797898
+    }
+  ],
+  "log_zip_sha256": "34633eadecf115ecde8b7cf52b5737ba2745278af35e7af14580cd5cf5cca1d4",
+  "audit_lines": [
+    "2026-10-14T09:36:14.8854815Z checked 41 tournaments, mismatches 0",
+    "2026-10-14T09:36:16.3663071Z failures 0",
+    "2026-10-14T09:36:17.3530387Z failures 0",
+    "2026-10-14T09:36:17.3830533Z all checks passed",
+    "2026-10-14T09:35:56.8240058Z Complete job name: Lean 4 proof with Mathlib and axiom audit",
+    "2026-10-14T09:38:08.7590519Z Build completed successfully (8933 jobs).",
+    "2026-10-14T09:38:12.9056111Z 'WormaldTournament.IsSignSkew.det_add_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9066510Z 'WormaldTournament.IsSignSkew.det_sub_ne_zero' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9067136Z 'WormaldTournament.det_add_mul_self_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9068133Z 'WormaldTournament.ratio_isSquare' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9068728Z 'WormaldTournament.hessian_identity' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9069238Z 'WormaldTournament.det_hessian' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9069746Z 'WormaldTournament.conj6_algebraic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9070271Z 'WormaldTournament.regular_hessian_det' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9070779Z 'WormaldTournament.det_conjB' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9071276Z 'WormaldTournament.det_conjB_hessF' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9071781Z 'WormaldTournament.conjecture6' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9072326Z 'WormaldTournament.det_smul_one_add_smul_shift' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9072894Z 'WormaldTournament.isTournament_cyclicT' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9073444Z 'WormaldTournament.isRegular_cyclicT' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9073943Z 'WormaldTournament.cayley' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9074439Z 'WormaldTournament.two_mul_det_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9074979Z 'WormaldTournament.four_mul_detMinus_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9075541Z 'WormaldTournament.four_mul_detPlus_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9076184Z 'WormaldTournament.div_hessDet_cyclic' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9076703Z 'WormaldTournament.re_add_I_pow_pos' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9077206Z 'WormaldTournament.rhoT_cyclic_eq' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9077722Z 'WormaldTournament.tendsto_cycRatio' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:12.9078230Z 'WormaldTournament.conjecture2' depends on axioms: [propext, Classical.choice, Quot.sound]",
+    "2026-10-14T09:38:13.1726560Z axiom audit: 23 theorems, standard axioms only"
+  ]
+}

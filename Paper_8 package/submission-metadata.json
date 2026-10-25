@@ -1,0 +1,80 @@
+{
+  "number": 8,
+  "title": "Two conjectures of Wormald on Hamilton cycles in tournaments",
+  "slug": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournaments",
+  "authors": [
+    {
+      "name": "Deep Bhattacharjee",
+      "orcid": "0000-0003-0466-750X",
+      "email": "itsdeep@live.com",
+      "affiliation": "Formerly, Electro-Gravitational Space Propulsion Laboratory (EGSPL), Bhubaneswar, Odisha 751030, India"
+    }
+  ],
+  "source": "C:\\CLAUDE PAPERS\\paper8-wormald-2026-10-25\\manuscript",
+  "pdf": "C:\\CLAUDE PAPERS\\paper8-wormald-2026-10-25\\manuscript\\main.pdf",
+  "repo": "Breakthrough-problems-1",
+  "local_repo": "C:\\CLAUDE PAPERS\\paper8-wormald-2026-10-25\\repository",
+  "repo_package_dir": "Paper_8 package",
+  "next_version": "1.1.0",
+  "manuscript_doi": "10.5281/zenodo.23567153",
+  "preprint": "https://hexagonmath.org/2610.00460v1",
+  "primary_subject": "math.CO",
+  "cross_list": [
+    "math.RA",
+    "math.PR"
+  ],
+  "msc2020": [
+    "05C20",
+    "05C45",
+    "05C50",
+    "05C80",
+    "15A15"
+  ],
+  "tags": [
+    "regular tournaments",
+    "Hamilton cycles",
+    "Hessian determinants",
+    "random blow-ups",
+    "rational-square identities",
+    "spectral bounds"
+  ],
+  "journal": "European Journal of Combinatorics",
+  "journal_slug": "european-journal-of-combinatorics",
+  "journal_scope_url": "https://shop.elsevier.com/journals/european-journal-of-combinatorics/0195-6698",
+  "journal_fit": "The exact tournament invariant, cyclic formulas and algebraic proof fit the journal's combinatorial and algebraic scope. The newer global Hamilton-cycle asymptotic of Divoux and Wang is explicitly credited; the manuscript does not claim that broader theorem as its contribution.",
+  "contribution": "The manuscript proves Wormald's Conjectures 2 and 6: a determinant formula for every regular tournament gives the rational-square property, and an exact cyclic formula gives the limit cosh(1)/cos(1). This revision details the analytic Hessian identification, proves quantitative positive-definiteness and supplies a direct spectral-radius argument.",
+  "ai_scope": "Claude through Claude Code assisted the original literature search, calculations, verification programs, Lean development, figure-generation code and text. OpenAI Codex assisted this revision's proof and literature audit, explicit analytic derivatives, quantitative nondegeneracy corollary, direct spectral-radius proof, exact matrix checker and submission files. The author retains responsibility for the mathematics, references and final submission decisions.",
+  "formalization_scope": "The unchanged Lean proof tree has a complete successful build and 23 axiom reports using only propext, Classical.choice and Quot.sound. It formalizes the determinant algebra and cyclic limit after identifying H with det(E^T F E). The analytic identification, asymptotic expansion, spectral bounds and new quantitative corollary have written proofs and are not claimed as Lean-formalized. Fresh exact checks verify 41 full Hessian matrices (3136 entries) and their bounds, and 142 manuscript values; numerical checks complement the universal proofs.",
+  "formalization_urls": [
+    "https://github.com/creelie/Breakthrough-problems-1/tree/v1.1.0/lean",
+    "https://github.com/creelie/Breakthrough-problems-1/blob/v1.1.0/lean/Check.lean"
+  ],
+  "tools": [
+    "Anthropic Claude / Claude Code",
+    "OpenAI Codex",
+    "Lean 4.34.1 / Mathlib",
+    "Python",
+    "C",
+    "PARI/GP",
+    "LaTeX / pdfLaTeX",
+    "Shell"
+  ],
+  "audit_url": "https://github.com/creelie/Breakthrough-problems-1/actions/runs/38543514270",
+  "abstract_tex": "For a regular tournament on $d$ vertices with skew adjacency matrix $S$, the Hessian determinant $H$ that Wormald attached to its random blow-ups equals $d\\det(d^2I+S^2)/\\det(d^2I-S^2)$. Hence $H\\neq0$ and $d/H$ is the square of a rational number, as Wormald conjectured. For the cyclic tournament it gives $\\sqrt{d/H}=\\bigl((d+1)^d+(d-1)^d\\bigr)/\\bigl((d+i)^d+(d-i)^d\\bigr)$, so the associated constants tend to $\\cosh 1/\\cos 1=2.8559578925\\ldots$; this proves a second conjecture of Wormald and identifies his numerical constant.",
+  "abstract_plain": "For a regular tournament on d vertices with skew adjacency matrix S, the Hessian determinant H that Wormald attached to its random blow-ups equals ddet(d^2I+S^2)/det(d^2I-S^2). Hence H!=q0 and d/H is the square of a rational number, as Wormald conjectured. For the cyclic tournament it gives sqrtd/H=bigl((d+1)^d+(d-1)^dbigr)/bigl((d+i)^d+(d-i)^dbigr), so the associated constants tend to cosh 1/cos 1=2.8559578925ldots; this proves a second conjecture of Wormald and identifies his numerical constant.",
+  "human_understanding": "All parts of this contribution have been checked and understood by a human.",
+  "human_understanding_basis": "Explicit confirmation by the submitting user specifically for the Paper 8 Wormald manuscript in this conversation on 25 October 2026.",
+  "text_classification": "A mix of human-written and AI-generated",
+  "primary_pdf": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournaments.pdf",
+  "tex_zip": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournamentstex.zip",
+  "pdf_sha256": "75eaf81ba0128279ba1fd32730f69cbaeede87966fd352077156909ab5a9a4c4",
+  "tex_zip_sha256": "a24386d97b0b8144a8e420826342c5a9da7fbd97357fcb04a7b70065c44f7154",
+  "pages": 11,
+  "hexagon_license": "CC BY 4.0 (manuscript record)",
+  "row_or_margin_line_numbers": false,
+  "source_changes_for_upload": [],
+  "journal_submission_performed": false,
+  "doi_of_new_package": null,
+  "package_release_pending": true,
+  "package_license": "MIT for repository code; manuscript preprint available under CC BY 4.0. Standard TeX classes are external dependencies."
+}

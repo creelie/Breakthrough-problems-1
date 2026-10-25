@@ -1,0 +1,143 @@
+ok   d=3: labelled counts add up to the total: 1 tournaments, 1 spectra
+ok   d=3 class [1, 0, 3, 0]: rho from char poly = rho from det(d^2I -+ S^2): 2
+ok   d=5: labelled counts add up to the total: 4 tournaments, 1 spectra
+ok   d=5 class [1, 0, 10, 0, 5, 0]: rho from char poly = rho from det(d^2I -+ S^2): 44/19
+ok   Table 1, d=5: rows = classes, in decreasing order: 1 rows
+ok   Table 1, d=5, 44/19: decimal: 2.315789
+ok   d=7: labelled counts add up to the total: 132 tournaments, 3 spectra
+ok   d=7 class [1, 0, 21, 0, 35, 0, 7, 0]: rho from char poly = rho from det(d^2I -+ S^2): 3032/1231
+ok   d=7 class [1, 0, 21, 0, 99, 0, 7, 0]: rho from char poly = rho from det(d^2I -+ S^2): 3088/1287
+ok   d=7 class [1, 0, 21, 0, 147, 0, 343, 0]: rho from char poly = rho from det(d^2I -+ S^2): 64/27
+ok   Table 1, d=7: rows = classes, in decreasing order: 3 rows
+ok   Table 1, d=7, 3032/1231: decimal: 2.463038
+ok   Table 1, d=7, 3088/1287: decimal: 2.399378
+ok   Table 1, d=7, 64/27: decimal: 2.370370
+ok   d=9: labelled counts add up to the total: 46144 tournaments, 12 spectra
+ok   d=9 class [1, 0, 36, 0, 126, 0, 84, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 437584/171769
+ok   d=9 class [1, 0, 36, 0, 254, 0, 212, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 443488/177529
+ok   d=9 class [1, 0, 36, 0, 318, 0, 660, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 446656/180193
+ok   d=9 class [1, 0, 36, 0, 318, 0, 404, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 446512/180337
+ok   d=9 class [1, 0, 36, 0, 366, 0, 1204, 0, 441, 0]: rho from char poly = rho from det(d^2I -+ S^2): 449152/182077
+ok   d=9 class [1, 0, 36, 0, 318, 0, 148, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 446368/180481
+ok   d=9 class [1, 0, 36, 0, 398, 0, 1396, 0, 729, 0]: rho from char poly = rho from det(d^2I -+ S^2): 50080/20381
+ok   d=9 class [1, 0, 36, 0, 382, 0, 1108, 0, 9, 0]: rho from char poly = rho from det(d^2I -+ S^2): 449824/182857
+ok   d=9 class [1, 0, 36, 0, 366, 0, 948, 0, 441, 0]: rho from char poly = rho from det(d^2I -+ S^2): 449008/182221
+ok   d=9 class [1, 0, 36, 0, 270, 0, 756, 0, 729, 0]: rho from char poly = rho from det(d^2I -+ S^2): 5488/2197
+ok   d=9 class [1, 0, 36, 0, 414, 0, 1812, 0, 2601, 0]: rho from char poly = rho from det(d^2I -+ S^2): 451696/183937
+ok   d=9 class [1, 0, 36, 0, 414, 0, 1620, 0, 2025, 0]: rho from char poly = rho from det(d^2I -+ S^2): 50176/20449
+ok   Table 1, d=9: rows = classes, in decreasing order: 12 rows
+ok   Table 1, d=9, 437584/171769: decimal: 2.547514
+ok   Table 1, d=9, 443488/177529: decimal: 2.498116
+ok   Table 1, d=9, 5488/2197: decimal: 2.497952
+ok   Table 1, d=9, 446656/180193: decimal: 2.478764
+ok   Table 1, d=9, 446512/180337: decimal: 2.475987
+ok   Table 1, d=9, 446368/180481: decimal: 2.473213
+ok   Table 1, d=9, 449152/182077: decimal: 2.466824
+ok   Table 1, d=9, 449008/182221: decimal: 2.464085
+ok   Table 1, d=9, 449824/182857: decimal: 2.459977
+ok   Table 1, d=9, 50080/20381: decimal: 2.457191
+ok   Table 1, d=9, 451696/183937: decimal: 2.455710
+ok   Table 1, d=9, 50176/20449: decimal: 2.453714
+ok   totals 4, 132, 46144 labelled tournaments for d = 5, 7, 9
+ok   d=3: R_d has the largest rho_T: 2
+ok   d=3: U_d - rho_T(R_d) < 1e-4: 0.0
+ok   d=5: R_d has the largest rho_T: 44/19
+ok   d=5: U_d - rho_T(R_d) < 1e-4: 0.0
+ok   d=7: R_d has the largest rho_T: 3032/1231
+ok   d=7: U_d - rho_T(R_d) < 1e-4: 2.7584e-5
+ok   d=9: R_d has the largest rho_T: 437584/171769
+ok   d=9: U_d - rho_T(R_d) < 1e-4: 9.3233e-5
+ok   d=3, rho=2: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=5, rho=44/19: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=7, rho=3032/1231: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=7, rho=3088/1287: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=7, rho=64/27: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=437584/171769: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=443488/177529: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=446656/180193: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=446512/180337: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=449152/182077: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=446368/180481: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=50080/20381: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=449824/182857: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=449008/182221: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=5488/2197: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=451696/183937: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   d=9, rho=50176/20449: rho >= ((d+1)/(d-1))^m, equality iff doubly regular
+ok   Paley 7 row is doubly regular: 64/27 = (8/6)^3
+ok   Wormald's table: rho_T(R_3) = 2
+ok   Wormald's table: rho_T(R_5) = 44/19
+ok   Wormald's table: rho_T(R_7) = 3032/1231
+ok   Wormald's table: rho_T(R_9) = 437584/171769
+ok   Wormald's table: rho_T(R_11) = 108859552/41833969
+ok   Wormald's table: rho_T(R_13) = 41637757888/15769379963
+ok   Wormald's table: rho_T(R_9') = 5488/2197 (R_9' = R_3 blown up by R_3)
+ok   Wormald's decimals for R_3
+ok   Wormald's decimals for R_5
+ok   Wormald's decimals for R_7
+ok   Wormald's decimals for R_9
+ok   Wormald's decimals for R_11
+ok   Wormald's decimals for R_13
+ok   Wormald's decimals for R_9'
+ok   decimals for R_21, truncated (Wormald's, R_81 corrected): 2.72151885904, 2.85425018428
+ok   decimals for R_41, truncated (Wormald's, R_81 corrected): 2.78670386817, 2.85550791814
+ok   decimals for R_81, truncated (Wormald's, R_81 corrected): 2.82080189929, 2.85584246885
+ok   decimals for R_101, truncated (Wormald's, R_81 corrected): 2.82774708852, 2.85588364447
+ok   Wormald's rho_R(R_81) = 2.855842467 is off in the last digit, as the paper says: 2.85584246885282
+ok   rho_R(R_101) = 2.855883...
+ok   h(n) > 2.85588 g(n) follows from R_101
+ok   rho_T(R_13) as stated
+ok   rho_T(R_3) = 2 and rho_T(R_5) = 44/19
+ok   Wormald's 7-vertex example: regular, rho_T = 3088/1287, the 84-tournament row
+ok   footnote: 41833969 = 43*307*3169 (primes), the denominator for d = 11
+ok   footnote: 53*297535471 (primes) is the denominator for d = 13
+ok   closed form (1.3) = det ratio for R_3
+ok   closed form (1.3) = det ratio for R_5
+ok   closed form (1.3) = det ratio for R_7
+ok   closed form (1.3) = det ratio for R_9
+ok   closed form (1.3) = det ratio for R_11
+ok   closed form (1.3) = det ratio for R_13
+ok   closed form (1.3) = det ratio for R_15
+ok   closed form (1.3) = det ratio for R_17
+ok   closed form (1.3) = det ratio for R_19
+ok   closed form (1.3) = det ratio for R_21
+ok   closed form (1.3) = det ratio for R_23
+ok   closed form (1.3) = det ratio for R_25
+ok   closed form (1.3) = det ratio for R_27
+ok   closed form (1.3) = det ratio for R_29
+ok   closed form (1.3) = det ratio for R_31
+ok   closed form (1.3) = det ratio for R_33
+ok   closed form (1.3) = det ratio for R_35
+ok   closed form (1.3) = det ratio for R_37
+ok   closed form (1.3) = det ratio for R_39
+ok   closed form (1.3) = det ratio for R_41
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_3 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_5 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_7 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_9 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_11 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_13 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_15 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_17 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_19 at 2d+2 points
+ok   det(xI - S) = ((x+1)^d + (x-1)^d)/2 for R_21 at 2d+2 points
+ok   second expression in (1.3) equals the first for odd d < 200
+ok   cosh1/cos1 = 2.85595789256511371...: 2.855957892565113711142604
+ok   abstract: 2.8559578925...
+ok   2.855958 is cosh1/cos1 to six places
+ok   Wormald's estimate 2.8559579 is cosh1/cos1 to seven places
+ok   G(1/d) = rho_R(R_d) at d = 11, 101
+ok   coefficient of d^-2 is -c(tan1 - tanh1)/3: -0.75760332716 vs -0.757603347512
+ok   coefficients of d^-1 and d^-3 vanish, that of d^-5 is -c/3: -0.951985961663 vs -0.951985964188
+ok   lim U_d = 2.8574011776...: 2.85740117767232
+ok   e^(1/d) U_d near the limit at d = 10001: -2.5921e-6
+ok   e^(1/d) U_d near the limit at d = 100001: -2.5871e-7
+ok   e^(1/d) U_d near the limit at d = 1000001: -2.5866e-8
+ok   limit points lie in [2.8559578, 2.8574012]
+ok   gap (lim U - c)/c is below 0.051%: 0.0505359%
+ok   e^(1/d)((d+1)/(d-1))^m > e (d < 2002) and U_d >= rho_T(R_d) (d < 400)
+ok   (5/4)^4 = 2.4414...
+ok   of Wormald's seven sets D only {1,2,3,5} gives a tournament
+ok   circulant {1,2,3,5}: rho_T = 451696/183937 = 2.4557..., the 576-tournament row
+ok   1.4582 e^(1/9) is about 1.63
+142 checks, 0 failures

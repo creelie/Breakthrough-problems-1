@@ -27,6 +27,9 @@ done
 echo "== Python: H from Wormald's definition against Theorem 1.1"
 python3 -I "$PY/wormald_hessian.py" $CLASSES | tee "$B/wormald_hessian.txt"
 
+echo "== Python: full Hessian matrix and exact nondegeneracy bounds"
+python3 "$PY/hessian_matrix_bounds.py" | tee "$B/hessian_matrix_bounds.txt"
+
 echo "== Python: Theorem 1.5 and the circulant remark"
 python3 -I "$PY/spectral_bounds.py" $CLASSES | tee "$B/spectral_bounds.txt"
 
