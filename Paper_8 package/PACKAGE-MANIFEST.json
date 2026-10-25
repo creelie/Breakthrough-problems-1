@@ -1,5 +1,5 @@
 {
-  "status": "reviewed and compiled package; release DOI pending",
+  "status": "published and checksum-verified package; DOI receipt added after publication",
   "paper_number": 8,
   "title": "Two conjectures of Wormald on Hamilton cycles in tournaments",
   "authors": [
@@ -15,7 +15,7 @@
   "planned_release": "v1.1.0",
   "journal": "European Journal of Combinatorics",
   "prior_manuscript_or_source_doi": "10.5281/zenodo.23567153",
-  "new_package_doi": null,
+  "new_package_doi": "10.5281/zenodo.23631103",
   "row_or_margin_line_numbers": false,
   "journal_submission_performed": false,
   "hexagon_submission_performed": false,
@@ -29,6 +29,11 @@
       "path": "aiprovinance.md",
       "bytes": 2673,
       "sha256": "ed35d32624c65076a02a6a3445910146d818c53a3dec7425aa4dbd63c9be6d09"
+    },
+    {
+      "path": "ARCHIVE-DOI.md",
+      "bytes": 1390,
+      "sha256": "01adeec137eabc7685e303e53dcf2a7e3df24e48167646043341cd3bcca0b707"
     },
     {
       "path": "build-verification.json",
@@ -47,8 +52,8 @@
     },
     {
       "path": "hexagonsubmissionform.md",
-      "bytes": 5252,
-      "sha256": "76e17732c73581d9242ec23136d0579f728618ebbe94dbc4b7323bd1f0d96170"
+      "bytes": 5479,
+      "sha256": "953d7c46ae0f708fff2a1ecb464cace0b6104f76a65ec4c29c6008cd7487878b"
     },
     {
       "path": "journalaideclarationform.pdf",
@@ -62,8 +67,8 @@
     },
     {
       "path": "journalsubmissiondetails.md",
-      "bytes": 5062,
-      "sha256": "19ec24a2d446956e80ba7acc2a850df0a5d9f0845434126e900746b9ca8dff57"
+      "bytes": 5289,
+      "sha256": "c65219d4acf16d43d04bc79eb8a89d673bf87f24a721f9bcce928f5c6576127c"
     },
     {
       "path": "proof-audit.json",
@@ -77,13 +82,18 @@
     },
     {
       "path": "README.md",
-      "bytes": 1305,
-      "sha256": "205cf71bdb143046fecf34dba2ad3382c3d11269f54cabab51ade97cc42c87a0"
+      "bytes": 1532,
+      "sha256": "892e0b9b6d970a82c0d3f723a6a66469301b1005c82bdcb753f244083b3df589"
+    },
+    {
+      "path": "release-verification.json",
+      "bytes": 4915,
+      "sha256": "c3464085722c1a69b564ec2672602407529d70d2d90dd82b81609f033a6a7c01"
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5760,
-      "sha256": "53771ef906b230643d415449aa662bc7a10fd1678ea158060d9c6dda9bb7adc8"
+      "bytes": 5996,
+      "sha256": "e202f6adbdfd4c589a2e72c0fdf25669cea44943d66af5f09e7a0de49e47597c"
     },
     {
       "path": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournaments.pdf",
@@ -95,5 +105,10 @@
       "bytes": 291843,
       "sha256": "e13a88579d4b3cded9f23bfd9f20e246c3d863e692bf4265673352e0c03521a8"
     }
+  ],
+  "release_commit": "f1e72e1443f328540dd7786dddca7eac5a3ebf9b",
+  "post_archive_receipt_files": [
+    "release-verification.json",
+    "ARCHIVE-DOI.md"
   ]
 }

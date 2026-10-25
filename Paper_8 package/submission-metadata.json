@@ -74,7 +74,10 @@
   "row_or_margin_line_numbers": false,
   "source_changes_for_upload": [],
   "journal_submission_performed": false,
-  "doi_of_new_package": null,
-  "package_release_pending": true,
-  "package_license": "MIT for original code; manuscript preprint under CC BY 4.0; standard TeX classes are external dependencies."
+  "doi_of_new_package": "10.5281/zenodo.23631103",
+  "package_release_pending": false,
+  "package_license": "MIT for original code; manuscript preprint under CC BY 4.0; standard TeX classes are external dependencies.",
+  "package_release": "https://github.com/creelie/Breakthrough-problems-1/releases/tag/v1.1.0",
+  "package_release_commit": "f1e72e1443f328540dd7786dddca7eac5a3ebf9b",
+  "doi_receipt_added_after_publication": true
 }

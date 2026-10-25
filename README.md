@@ -2,7 +2,7 @@
 
 ## Current upload package
 
-[Paper_8 package](Paper_8%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 1.1.0.
+[Paper_8 package](Paper_8%20package/README.md) contains the reviewed Hexagon/Overleaf source ZIP, the current PDF, AI provenance, complete Hexagon fields and supporting files for **European Journal of Combinatorics**. The package records the current proof/check scope and has no margin line numbers. No journal submission or acceptance is claimed. Version: 1.1.0. Package DOI: [10.5281/zenodo.23631103](https://doi.org/10.5281/zenodo.23631103).
 
 
 N. C. Wormald, *Tournaments with many Hamilton cycles*
