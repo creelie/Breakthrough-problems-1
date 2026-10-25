@@ -63,6 +63,7 @@
     "authors": "Alexander Divoux and Shouda Wang",
     "public_arxiv_date": "2026-10-16",
     "claim": "Broader sharp global Hamilton-cycle asymptotic is credited, not claimed as this manuscript’s contribution.",
+    "finite_order_bound": "Proposition 7.1 gives the sharp determinant-ratio comparison; credited explicitly. The manuscript retains its weaker elementary spectral bound with a direct proof.",
     "mathematical_input_to_hessian_proof": false,
     "first_priority_claim_made": false
   },

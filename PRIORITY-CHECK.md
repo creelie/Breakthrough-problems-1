@@ -26,3 +26,5 @@ square property observed numerically and the constant estimated as 2.8559579 by 
 ## Update, 25 October 2026
 
 The search above is a historical record as of 14 October, not a present claim that the broader asymptotic maximum remains open. Divoux and Wang's preprint arXiv:2610.23755, posted 16 October 2026, gives the sharp global Hamilton-cycle and path asymptotics with the same constant. The current manuscript cites it and removes the old open-problem sentence. Its exact finite Hessian calculation is derived directly from Wormald's definition, and no priority conclusion about the broader theorem or constant is inferred from this dated search log.
+
+The current manuscript also credits Proposition 7.1 of Divoux and Wang for the sharper finite-order determinant-ratio comparison; its own elementary spectral upper bound is not presented as the sharpest known bound.

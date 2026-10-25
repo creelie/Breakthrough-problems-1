@@ -67,14 +67,14 @@
   "text_classification": "A mix of human-written and AI-generated",
   "primary_pdf": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournaments.pdf",
   "tex_zip": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournamentstex.zip",
-  "pdf_sha256": "75eaf81ba0128279ba1fd32730f69cbaeede87966fd352077156909ab5a9a4c4",
-  "tex_zip_sha256": "a24386d97b0b8144a8e420826342c5a9da7fbd97357fcb04a7b70065c44f7154",
-  "pages": 11,
+  "pdf_sha256": "0bb8d33745bdf741a70491c3864ca3776676462b80d4a795521d62d3d436a9e0",
+  "tex_zip_sha256": "e13a88579d4b3cded9f23bfd9f20e246c3d863e692bf4265673352e0c03521a8",
+  "pages": 12,
   "hexagon_license": "CC BY 4.0 (manuscript record)",
   "row_or_margin_line_numbers": false,
   "source_changes_for_upload": [],
   "journal_submission_performed": false,
   "doi_of_new_package": null,
   "package_release_pending": true,
-  "package_license": "MIT for repository code; manuscript preprint available under CC BY 4.0. Standard TeX classes are external dependencies."
+  "package_license": "MIT for original code; manuscript preprint under CC BY 4.0; standard TeX classes are external dependencies."
 }

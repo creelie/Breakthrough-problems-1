@@ -125,3 +125,5 @@ The current manuscript credits [Divoux and Wang, arXiv:2610.23755](https://arxiv
 The revision writes out the implicit first/second derivatives, gives a quantitative positive-definiteness corollary and a direct proof of the spectral-radius input. [Proof audit](verification/paper8/proof-audit.json) records the 23 standard-axiom Lean reports at the unchanged proof tree and the formalization boundary. The new exact matrix checker compares all 3136 entries on 41 tournaments and verifies both matrix bounds; 142 manuscript-value checks pass. These finite checks complement the universal proofs.
 
 The submitting author specifically confirmed that all parts of Paper 8 have been checked and understood by a human. The original sole byline is retained. Use the files in `Paper_8 package` for new submissions; older master ZIPs and arXiv tarballs remain historical artifacts. No arXiv submission is performed.
+
+The current manuscript also credits Proposition 7.1 of Divoux and Wang for the sharper finite-order determinant-ratio comparison; its own elementary spectral upper bound is not presented as the sharpest known bound.

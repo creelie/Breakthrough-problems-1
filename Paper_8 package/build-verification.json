@@ -10,14 +10,14 @@
   ],
   "source_changes": [],
   "matches_existing_pdf_text_and_pages": true,
-  "pages": 11,
-  "manuscript_pdf_sha256": "75eaf81ba0128279ba1fd32730f69cbaeede87966fd352077156909ab5a9a4c4",
-  "source_zip_sha256": "a24386d97b0b8144a8e420826342c5a9da7fbd97357fcb04a7b70065c44f7154",
+  "pages": 12,
+  "manuscript_pdf_sha256": "0bb8d33745bdf741a70491c3864ca3776676462b80d4a795521d62d3d436a9e0",
+  "source_zip_sha256": "e13a88579d4b3cded9f23bfd9f20e246c3d863e692bf4265673352e0c03521a8",
   "cover_letter_pages": 1,
   "ai_declaration_pages": 1,
   "overfull_boxes": [],
   "line_numbering_disabled": true,
   "visual_review_complete": true,
-  "visual_review_scope": "All 11 manuscript pages inspected in rendered contact sheets; both supporting PDFs inspected at full size. No clipping, overlaps or row/margin line numbers.",
+  "visual_review_scope": "All 12 revised manuscript pages inspected in rendered sheets. Supporting PDFs retain the reviewed text and layout. No clipping, overlaps or row/margin line numbers.",
   "no_margin_line_numbers": true
 }

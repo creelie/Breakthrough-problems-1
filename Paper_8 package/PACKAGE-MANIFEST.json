@@ -32,13 +32,13 @@
     },
     {
       "path": "build-verification.json",
-      "bytes": 944,
-      "sha256": "fe8e2311528972184ca90e2a97a5e88d3666d82954269f75b6732cce91894f62"
+      "bytes": 952,
+      "sha256": "a06e4441b4bd3701294ad0b959663af69a782e3d8ba6b408d60cec0ce9c9764e"
     },
     {
       "path": "coverletterjournal.pdf",
       "bytes": 85228,
-      "sha256": "69df550e64c04f1a90c839b160d74da29faad32d59ee42cf53148f1d038156d3"
+      "sha256": "749b560c12386b91fa0169ef1a90b11e947af7deeb2571e0a0df4deb9e95d464"
     },
     {
       "path": "coverlettertex.zip",
@@ -53,7 +53,7 @@
     {
       "path": "journalaideclarationform.pdf",
       "bytes": 110687,
-      "sha256": "4f49d5274744146832bd6a52ac4e652e9f24ee6c0b2c185b720ec2040d7a1bfb"
+      "sha256": "e3a7fa9977022f0f07104867c1b287044d98ac804358479219e9deeacf69abe7"
     },
     {
       "path": "journalaideclarationform.tex",
@@ -67,13 +67,13 @@
     },
     {
       "path": "proof-audit.json",
-      "bytes": 8732,
-      "sha256": "84c8dee977a6a5b7bfe856c1f638a3e6886b94e0dded7465a5b0bdf80528a5b2"
+      "bytes": 8925,
+      "sha256": "3c5ab2c0f014094bfe078ee0f909f29dc269bbabc38e53cee4e165905a8df2be"
     },
     {
       "path": "PROOF_REVIEW.md",
-      "bytes": 2023,
-      "sha256": "c16f63870f1e7281c6fa53eace7470f6ad3580e4bfff63c0b5db176e37c9b70e"
+      "bytes": 2186,
+      "sha256": "a88871cd359f8cc2a62a22b668547399f9335b31c083e798bef0d535bccccade"
     },
     {
       "path": "README.md",
@@ -82,18 +82,18 @@
     },
     {
       "path": "submission-metadata.json",
-      "bytes": 5772,
-      "sha256": "29d85416ea46e4859552bd90eedc1780cf405c7cb25fe79d3f17b59299460334"
+      "bytes": 5760,
+      "sha256": "53771ef906b230643d415449aa662bc7a10fd1678ea158060d9c6dda9bb7adc8"
     },
     {
       "path": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournaments.pdf",
-      "bytes": 744783,
-      "sha256": "75eaf81ba0128279ba1fd32730f69cbaeede87966fd352077156909ab5a9a4c4"
+      "bytes": 746257,
+      "sha256": "0bb8d33745bdf741a70491c3864ca3776676462b80d4a795521d62d3d436a9e0"
     },
     {
       "path": "Two_conjectures_of_Wormald_on_Hamilton_cycles_in_tournamentstex.zip",
-      "bytes": 291655,
-      "sha256": "a24386d97b0b8144a8e420826342c5a9da7fbd97357fcb04a7b70065c44f7154"
+      "bytes": 291843,
+      "sha256": "e13a88579d4b3cded9f23bfd9f20e246c3d863e692bf4265673352e0c03521a8"
     }
   ]
 }
